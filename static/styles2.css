@@ -1,0 +1,640 @@
+:root{
+    --altura-nav: 70px;
+}
+
+/* Quita el resaltado azul en móviles */
+button, 
+a, 
+input, 
+select, 
+textarea,
+div[role="button"] {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+/* Evita el contorno azul de enfoque (accesibilidad) */
+button:focus, 
+a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/*Desvanecimiento pagina */
+body.fade-in {
+    opacity: 0;
+    transition: opacity 1.0s ease-in-out;
+}
+
+body.fade-in.visible {
+    opacity: 1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #e9e9fe;
+}
+
+.margenes{
+  margin: 2em 0;
+}
+/*navbar*/
+header#bar {
+    position: fixed; /* Pega el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:var(--altura-nav);
+    z-index: 1000; /* para que quede por encima de todo */
+    background-color: #fff; /* color de fondo, puedes poner transparente si quieres */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo centrado */
+.navbar .logo {
+  flex: 1;
+  text-align: center;
+}
+.navbar .logo img {
+  max-height: 60px;
+}
+
+
+.nav-links {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background-color: #fff;
+  display: none; /* Ocultos por defecto */
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  list-style: none;
+  margin: 0;
+}
+.nav-links.show {
+  display: flex; /* Se muestran al hacer click */
+}
+.nav-links li {
+  text-align: center;
+  padding: 10px 0;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #ae9dd6;
+}
+
+/* Botón hamburguesa siempre visible */
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+/*page*/
+#page{
+    display:grid;
+    display: flex;
+    padding-top: var(--altura-nav);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* incio*/
+
+#inicio{
+    text-align: center;
+}
+
+#nombre{
+    font-family: 'Gwendolyn',cursive; /* o la que uses */
+    font-size: 150px;
+    padding:0;
+    margin:0;
+}
+
+
+#titulo{
+    font-family: 'Gwendolyn',cursive; /* o la que uses */
+    font-size: 80px;
+    padding:0;
+    margin:0;
+}
+
+#nuestra{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* bold */
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+
+.separador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 10px 30px;
+
+}
+
+.separador::before,
+.separador::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #000000; /* tu color dorado */
+}
+
+.separador span{
+    margin: 0 15px;
+    font-size: 80px;
+    font-family: 'Gwendolyn'; /* o la que uses */
+    color: #000000;
+}
+
+/*presentacion*/
+#frase{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; /* bold */
+    font-style: italic;
+    font-size: 30px;
+    margin: 40px 20px 20px 20px;
+}
+
+#padres{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; /* bold */
+
+    font-size: 25px;
+    margin: 30px 20px 10px 20px;
+}
+
+#pas{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400; 
+    font-size: 18px;
+    margin: 1em 15%;
+}
+
+/*lugar*/
+#lugar{
+    align-items: center;
+    justify-content: center;
+}
+.titulos{
+    font-family: 'Gwendolyn',cursive; /* o la que uses */
+    font-size: 80px;
+    padding:0;
+    margin:20px 0 20px 0;
+    color: #7e4cb1;
+}
+
+.separadores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+    height: 1px;
+}
+
+.separadores::before,
+.separadores::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ffffff; /* tu color dorado */
+}
+
+.imagenes{
+    display: block;
+    width: 40%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+/*botones de la pagina*/
+button {
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+  padding: 3px 32px;
+  border-radius: 100px;
+  background: #ae9dd6;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin: 0 auto;
+}
+
+button:hover {
+  background: #d5cbed;
+}
+
+button > svg {
+  width: 25px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.btn-wrapper {
+  display: inline-block;
+  margin: 25px auto;
+  text-decoration: none;
+}
+
+.imagenes-chicas{
+    display: block;
+    width: 35%;
+    height: 20%;
+    margin: 40px auto 0 auto;
+}
+
+#regalos{
+    align-items: center;
+    justify-content: center;
+}
+
+/*para subir archivo*/
+/* From Uiverse.io by Yaya12085 */
+#cuadro{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+  margin:30px;
+} 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #ae9dd6;
+}
+
+.signin a:hover {
+  text-decoration: underline #ae9dd6;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #ae9dd6;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+}
+
+.radio-option {
+  position: relative;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* ocultamos el radio nativo */
+.radio-option input {
+  display: none;
+}
+
+/* estilo tipo pill */
+.radio-option span {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 2px solid #d0d0d0;
+  font-size: 14px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+/* seleccionado */
+.radio-option input:checked + span {
+  background-color: #ae9dd6;
+  color: white;
+  border-color: #ae9dd6;
+}
+
+/* hover */
+.radio-option span:hover {
+  border-color: #ae9dd6;
+}
+
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px;
+}
+
+/* el texto ocupa su espacio */
+.radio-group p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* cada opción se puede estirar */
+.radio-option {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.letra{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400; 
+  font-size: 16px;
+}
+
+.desactivado {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.input2:disabled {
+  background-color: #f2f2f2; /* gris claro */
+  cursor: not-allowed;
+  opacity: 0.6; /* se ve “inactivo” */
+}
+
+
+#footer{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mi-toggle {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 250px;
+  margin: auto;
+}
+
+.mi-toggle-title {
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+   font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.mi-toggle-title .icon {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.mi-toggle-content {
+  margin-top: 10px;
+}
+
+.mi-toggle-content p{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.mi-toggle-content img{
+  width: 160px;
+  height: 160px;
+}
+.seccion {
+  position: relative;   /* CLAVE */
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.seccion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+}
+
+.text-arriba {
+  position: relative;
+  inset: 0;             /* ocupa toda la sección */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;           /* MÁS alto que la imagen */
+  color: white;
+}
+
+.text-arriba h1{
+  font-family: 'Gwendolyn',cursive;
+  font-size: 80px;
+
+}
+
+.text-arriba p{
+  font-size: 30px;
+}
+
+
+/*Parte del sobre*/
+/* El fondo que cubre la invitación */
+#pantalla-sobre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fdfdfd; /* Color limpio de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+#sobre {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sello {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    width: 280px; /* Tamaño del corazón */
+    height: auto;
+   /* Quita el borde azul al hacer clic */
+    box-shadow: none !important;
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.sello img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: latido 1.5s infinite;
+    /* Si se ve morado al fondo, es porque la imagen lo trae. 
+       Esto asegura que el botón no añada nada extra: */
+    background-color: transparent !important; 
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.15); } /* Un latido un poco más marcado */
+    100% { transform: scale(1); }
+}
+
+/* Reseteo agresivo para el botón del corazón */
+button.sello {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important; /* Mantiene el centrado pero sin espacio extra */
+  border-radius: 0 !important;
+  display: block !important; /* Cambiamos de flex a block para evitar alineaciones raras */
+  width: 280px; /* O el tamaño que prefieras para tu corazón */
+}
+
+/* Evitamos que el hover le vuelva a poner el fondo morado */
+button.sello:hover {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* Quitamos el efecto de escala al hacer clic si no lo quieres, 
+   o déjalo si quieres que el corazón se hunda un poco */
+button.sello:active {
+  transform: scale(1.1); /* Para que el clic se sienta como un latido extra */
+}

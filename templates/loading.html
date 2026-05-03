@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV años Ivanna</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" href="static/icono.png" type="image/png">
+</head>
+<body>
+    <div id="corazones">
+        <span class="corazon grande material-icons">
+            favorite
+        </span>
+        <span class="corazon pequenio material-icons">
+            favorite
+        </span>
+    </div>
+    <script>
+        // Trigger the background task immediately on page load
+        fetch('/process-task')
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === "complete") {
+                    window.location.href = '/pagina'; // Redirect when finished
+                }
+            });
+    </script>
+</body>
+</html>

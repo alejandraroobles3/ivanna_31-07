@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV años Ivanna</title>
+    <link rel="stylesheet" href="static/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Gwendolyn:wght@400;700&family=MonteCarlo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/icono.png" type="image/png">
+</head>
+
+<body class="fade-in">
+  <div id="pantalla-sobre">
+    <div id="sobre">
+        <button type="button" class="sello" onclick="abrirInvitacion()">
+            <img src="static/corazon.png" alt="Presiona para abrir">
+        </button>
+
+    </div>
+</div>
+
+<audio id="bgAudio" loop>
+    <source src="/static/Clocks.mp3" type="audio/mpeg">
+</audio>
+  <header id="bar">
+    <nav class="navbar">
+      <!-- Logo centrado -->
+      <div class="logo">
+        <a href="#home">
+          <img id="logoimg" src="static/corazon.png" alt="Logo">
+        </a>
+      </div>
+
+      <!-- Links principales -->
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#presentacion">Presentación</a></li>
+        <li><a href="#lugar">Lugar</a></li>
+        <li><a href="#vestimenta">Vestimenta</a></li>
+        <li><a href="#regalos">Regalos</a></li>
+        <li><a href="#asistencia">Asistencia</a></li>
+      </ul>
+
+      <!-- Botón tipo hamburguesa siempre visible -->
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        &#9776;
+      </button>
+    </nav>
+  </header>
+  
+  <div  id="page">
+    <div id="inicio">
+        <h1 id="nombre">Ivanna</h1>
+      <h1 id="titulo">mis</h1>
+      <div class="separador"><span>XV</span></div>
+      <h1 id="titulo">Años</h1>
+      <h2 id="nuestra">31.Julio.2026</p>
+    </div>
+    <div class="separadores"></div>
+    <div id="presentacion">
+      <h1 id="frase">Junto a mis padres y padrinos, queremos invitarles a compartir conmigo este día tan especial</h1>
+      <h3 id="padres">Padres</h2>
+      <p id="pas">Azaela Yazmin Nuñez Martinez</p>
+      <p id="pas">Carlos Ivan García Cota</p>
+      <p id="padres">Padrinos</p>
+      <p id="pas">María Nuñez</p>
+      <p id="pas">Nayely Santacruz Gavilanes</p>
+      <p id="pas">Ricardo Mora Flores</p>
+      <h2 id="frase">Hay momentos que son especiales, pero compartirlos con las personas que más quiero los hace inolvidables.</h2>
+    </div>
+    <div class="separadores"></div>
+    <div id="lugar">
+      <h1 class="titulos">¿Cuando y donde?</h1>
+      <h2 class="padres">31.Julio.2026</h2>
+      <h3 id="pas">Colton, California</h3>
+      <h2 id="padres">Ceremonia</h2>
+      <img class="imagenes" src="static/templo.jpg" alt="Ceremonia">
+      <p id="pas">Our Lady of Guadalupe Shrine</p>
+      <p id="pas">2858 9th St, Riverside, CA 92507</p>
+      <h4 id="pas">12:00 pm</h4>
+      <a
+        href="https://maps.app.goo.gl/r8kAJDSn7HwBYLxk6"
+        target="_blank"
+        class="btn-wrapper"
+      >  
+        <button>
+          <span>Ver mapa</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 74 74"
+            height="34"
+            width="34"
+          >
+            <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+            <path
+              fill="black"
+              d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+            ></path>
+          </svg>
+        </button>
+      </a>
+      <h2 id="padres">Recepcion</h2>
+      <img class="imagenes" src="static/salon.png" alt="Recepcion">
+      <p id="pas">Premier Events</p>
+      <p id="pas">930 S Mt Vernon Ave SUITE 100, Colton, CA 92324</p>
+      <p id="pas">Coctel</p>
+      <p id="pas">5:00pm - 6:00pm</p>
+      <p id="pas">Evento</p>
+      <p id="pas">6:00pm - 12:00am</p>
+
+      <a
+        href="https://maps.app.goo.gl/M5LVnMMaye4Zcwu29"
+        target="_blank"
+        class="btn-wrapper"
+      >  
+        <button>
+          <span>Ver mapa</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 74 74"
+            height="34"
+            width="34"
+          >
+            <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+            <path
+              fill="black"
+              d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+            ></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+    <div class="separadores"></div>
+    <div id="vestimenta">
+      <h1 class="titulos">Vestimenta</h1>
+      <img clas="imagenes" src="static/vestimenta.svg" alt="festimenta">
+      <p id="pas">Formal</p>
+      <p id="pas">Preferencia de color: Negro</p>
+    </div>
+    <div class="separadores"></div>
+    <div id="regalos">
+      <h1 class="titulos">Mesa de Regalos</h1>
+      <h2 id="pas">Nuestro mejor regalo es tu presencia, pero si tu deseo es hacerle un obsequio estas son nuestras sugerencias</h2>
+      <a href="https://www.amazon.com/registries/gl/guest-view/4HZOH48ZC82R?ref_=cm_sw_r_apann_ggr-subnav-share_ENK8KCB6YQY9Y5DS1214&language=en-US">
+        <img class="imagenes-chicas" src="static/amazon.png" alt="amazon">
+      </a>
+      <a
+        href="https://www.amazon.com/registries/gl/guest-view/4HZOH48ZC82R?ref_=cm_sw_r_apann_ggr-subnav-share_ENK8KCB6YQY9Y5DS1214&language=en-US"
+        target="_blank"
+        class="btn-wrapper"
+      >  
+        <button>
+          <span>Ver</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 74 74"
+            height="34"
+            width="34"
+          >
+            <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+            <path
+              fill="black"
+              d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+            ></path>
+          </svg>
+        </button>
+      </a>
+      <div class="margenes"></div>
+      <div class="mi-toggle">
+        <div class="mi-toggle-title" tabindex="0">
+          <img src="/static/sobre.png" alt="" width="56">
+          Lluvia de sobres
+          <span class="icon">▼</span>
+        </div>
+
+        <div class="mi-toggle-content" style="display: none;">
+          <img src="/static/sobre_adentro.png" alt="">
+          <p >Si lo deseas, habrá un espacio para dejar tu regalo en efectivo dentro de un sobre.</p>
+        </div>
+      </div>
+    </div>
+    <div class="separadores"></div>
+    <div id="asistencia">
+      <h1 class="titulos">Asistencia</h1>
+      <p id="pas">Sería un honor para nosotros contar con tu prescencia</p>
+      <p id="pas">Confirma tu asistencia antes del 10 de Julio</p>
+      <div id="cuadro">
+        <div class="form">
+            <div class="flex">
+              <label>
+                  <input required="" placeholder="" type="text" id="nombree" class="input">
+                  <span>Nombre</span>
+              </label>
+              <label>
+                  <input required="" placeholder="" type="text" id="apellido" class="input">
+                  <span>Apellido</span>
+              </label>
+          </div>  
+
+          <div class="radio-group"> 
+            <p class="letra">¿Asistirás?</p>
+            <label class="radio-option">
+              <input type="radio" name="asiste" id="asiste" value="si" onclick="toggleInvitados(true)" checked>
+              <span class="letra">Sí, asistiré</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" name="asiste" id="asiste" value="no" onclick="toggleInvitados(false)">
+              <span class="letra">No, lo siento</span>
+            </label>
+          </div>
+
+          <div id="invitados_container">
+            <p class="letra" style="margin-bottom: 0; margin-top: 10px;">Número de invitados</p>
+            <div id="invitados" class="flex">
+                <label>
+                    <input placeholder="" type="number" id="adultos" class="input input2">
+                    <span class="letra">Adultos (+11)</span>
+                </label>
+                <label>
+                    <input placeholder="" type="number" id="ninios" class="input input2">
+                    <span class="letra">Niños (0-11 años)</span>
+                </label>
+            </div>
+          </div>
+
+          <div class="separadores"></div>
+          <button type="button" class="submit" onclick="enviarWhatsapp()">Confirmar por Whatsapp</button>
+        </div>
+      </div>
+    </div>
+    <div class="separadores"></div>
+    <div class="seccion" >
+      <img src="/static/footer.jpg" alt="">
+      <div class="text-arriba">
+        <h1>Mis XV años</h1>
+        <h1>Ivanna</h1>
+        <p>31 · 07 · 26</p>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <p>Hecho con &hearts;   por Alejandra Robles.</p>
+    <p>  &copy; Copyright 2026. Todos los derechos reservados</p>
+  </footer>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+  <script>
+
+   function enviarWhatsapp() {
+      const telefono = "19513994961";
+
+      // 1. Intentamos obtener los elementos
+      const inputNombre = document.getElementById('nombree');
+      const inputApellido = document.getElementById('apellido');
+      const inputAdultos = document.getElementById('adultos');
+      const inputNinios = document.getElementById('ninios');
+      // Buscamos cuál radio está seleccionado
+      const radioSeleccionado = document.querySelector('input[name="asiste"]:checked');
+
+      // 2. Validamos que los campos de texto existan y no estén vacíos
+      if (!inputNombre || !inputApellido) {
+          alert("Error técnico: No se encontraron los campos de nombre o apellido en el HTML.");
+          return;
+      }
+
+      const nombre = inputNombre.value.trim();
+      const apellido = inputApellido.value.trim();
+
+      if (nombre === "" || apellido === "") {
+        alert("Por favor, completa tu nombre y apellido.");
+        return;
+      }
+
+      // 3. Validamos el Radio Button (Aquí estaba tu error)
+      if (!radioSeleccionado) {
+        alert("Por favor, selecciona si asistirás o no.");
+        return;
+      }
+      const asiste = radioSeleccionado.value;
+
+      // 4. Obtener valores de invitados
+      const adultos = inputAdultos ? inputAdultos.value : "0";
+      const ninios = inputNinios ? inputNinios.value : "0";
+
+      // 5. Construir mensaje
+      let mensaje = `Hola! Soy ${nombre} ${apellido}.\n`;
+      
+      if (asiste === "si") {
+        mensaje += `Confirmo mi asistencia al evento \n`;
+        mensaje += `Somos:\n- Adultos: ${adultos || 0}\n- Niños: ${ninios || 0}`;
+      } else {
+        mensaje += `Lamentablemente no podré asistir a la celebración, mis mejores deseos. `;
+      }
+
+      // 6. Abrir WhatsApp
+      const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, '_blank');
+    }
+
+    function toggleInvitados(mostrar) {
+      const contenedor = document.getElementById("invitados");
+      const inputs = contenedor.querySelectorAll("input");
+
+      if (mostrar) {
+          contenedor.classList.remove("desactivado");
+          inputs.forEach(input => {
+          input.disabled = false;
+          input.required = true;
+          });
+      } else {
+          contenedor.classList.add("desactivado");
+          inputs.forEach(input => {
+          input.disabled = true;
+          input.required = false;
+          input.value = "";
+          });
+      }
+    }
+    function abrirInvitacion() {
+    const audio = document.getElementById("bgAudio");
+    const sobre = document.getElementById("pantalla-sobre");
+
+    // 1. Iniciar música
+    audio.play().catch(e => console.log("Error audio:", e));
+
+    // 2. Animación de salida (puedes ajustarla con CSS)
+    sobre.style.transition = "opacity 1s ease, transform 1s ease";
+    sobre.style.opacity = "0";
+    sobre.style.transform = "scale(1.2)";
+
+    // 3. Eliminarlo por completo después de la animación
+    setTimeout(() => {
+        sobre.style.display = "none";
+    }, 1000);
+}
+  </script>
+
+</body>
+</html>
